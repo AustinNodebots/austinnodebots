@@ -1,16 +1,11 @@
 module.exports = {
-  "files": [
-    "Gruntfile.js",
-    "grunt/**/*.js",
-    "src/**/*.js"
-  ],
-  "options": {
-    "globals": {
-      "jQuery": true,
-      "console": true,
-      "module": true,
-      "document": true
-    }
-  }
+	files: [
+		'Gruntfile.js',
+		'grunt/**/*.js',
+		'src/**/*.js'
+	],
+	options: {
+		jshintrc: true
+	}
 
 };
