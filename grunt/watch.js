@@ -1,40 +1,43 @@
 module.exports = {
-	"configFiles": {
-		"files": [
-			"Gruntfile.js"
+	configFiles: {
+		files: [
+			'Gruntfile.js',
+			'grunt/**/*.{js,yaml}'
 		],
-		"options": {
-			"reload": true
+		options: {
+			reload: true
 		}
 	},
-	"js": {
-		"files": [
-			"src/**/*.js"
+	js: {
+		files: [
+			'Gruntfile.js',
+			'grunt/**/*.js',
+			'src/**/*.js'
 		],
-		"tasks": [
-			"jshint"
+		tasks: [
+			'jshint'
 		],
-		"options": {
-			"livereload": true
+		options: {
+			livereload: true
 		}
 	},
-	"sass": {
-		"files": [
-			"src/sass/**/*.scss"
+	sass: {
+		files: [
+			'src/sass/**/*.scss'
 		],
-		"tasks": [
-			"sass:dev"
+		tasks: [
+			'sass:dev'
 		],
-		"options": {
-			"atBegin": true
+		options: {
+			atBegin: true
 		}
 	},
-	"css": {
-		"files": [
-			"src/css/**/*.css"
+	css: {
+		files: [
+			'src/css/**/*.css'
 		],
-		"options": {
-			"livereload": true
+		options: {
+			livereload: true
 		}
 	}
 };

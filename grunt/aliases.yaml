@@ -1,7 +1,18 @@
 default:
 - 'newer:jshint'
-- 'newer:sass'
-- 'newer:uglify'
+- 'newer:sass:dev'
+- 'watch'
 
 test:
 - 'newer:jshint'
+
+build:
+- 'clean:dist'
+- 'jshint'
+- 'sass:dist'
+- 'uglify'
+- 'copy'
+
+deploy:
+- 'build'
+- 'gh-pages'

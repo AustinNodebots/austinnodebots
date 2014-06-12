@@ -1,12 +1,12 @@
 module.exports = {
-	"dist": {
-		"files": [{
-			"expand": true,
-			"cwd": "src",
-			"src": [
-				"**/*.html"
+	dist: {
+		files: [{
+			expand: true,
+			cwd: 'src',
+			src: [
+				'**/*.html'
 			],
-			"dest": "dist"
+			dest: 'dist'
 		}]
 	}
 };
