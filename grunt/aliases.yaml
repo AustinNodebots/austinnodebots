@@ -1,8 +1,7 @@
 default:
-- 'jshint'
-- 'sass'
-- 'concat'
-- 'uglify'
+- 'newer:jshint'
+- 'newer:sass'
+- 'newer:uglify'
 
 test:
-- jshint
+- 'newer:jshint'
