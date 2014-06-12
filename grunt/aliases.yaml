@@ -1,0 +1,8 @@
+default:
+- 'jshint'
+- 'sass'
+- 'concat'
+- 'uglify'
+
+test:
+- jshint
