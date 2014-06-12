@@ -1,0 +1,25 @@
+@import "partials/normalize";
+
+body {
+	background-color: #F0DB4F;
+}
+
+.logo {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1em;
+	width: 100%;
+}
+
+@media screen and ( min-width: 900px ) {
+	.container {
+		max-width: 900px;
+	}
+}
+
+h1 {
+	text-align: center;
+}
