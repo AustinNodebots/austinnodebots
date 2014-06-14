@@ -4,9 +4,7 @@ module.exports = {
 			'Gruntfile.js',
 			'grunt/**/*.{js,yaml}'
 		],
-		options: {
-			reload: true
-		}
+		reload: true
 	},
 	js: {
 		files: [
@@ -15,7 +13,7 @@ module.exports = {
 			'src/**/*.js'
 		],
 		tasks: [
-			'jshint'
+			'newer:jshint'
 		],
 		options: {
 			livereload: true
@@ -26,15 +24,15 @@ module.exports = {
 			'src/sass/**/*.scss'
 		],
 		tasks: [
-			'sass:dev'
+			'newer:sass:dev'
 		],
 		options: {
-			atBegin: true
-		}
+			livereload: true
+ 		}
 	},
-	css: {
+	html: {
 		files: [
-			'src/css/**/*.css'
+			'src/**/*.html'
 		],
 		options: {
 			livereload: true

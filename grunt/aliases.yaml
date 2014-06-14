@@ -1,7 +1,5 @@
 default:
-- 'newer:jshint'
-- 'newer:sass:dev'
-- 'watch'
+- 'server'
 
 test:
 - 'newer:jshint'
@@ -16,3 +14,15 @@ build:
 deploy:
 - 'build'
 - 'gh-pages'
+
+server:
+- 'sass:dev'
+- 'connect:dev'
+- 'open:dev'
+- 'watch'
+
+server-dist:
+- 'build'
+- 'connect:dist'
+- 'open:dist'
+- 'watch'
