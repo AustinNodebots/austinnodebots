@@ -2,7 +2,7 @@ default:
 - 'server'
 
 test:
-- 'newer:jshint'
+- 'jshint'
 
 build:
 - 'clean:dist'

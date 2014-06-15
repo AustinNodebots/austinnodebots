@@ -2,7 +2,7 @@ module.exports ={
 	dist: {
 		options: {
 			includePaths: [
-				'sass'
+				'sass/**/*'
 			],
 			outputStyle: 'compressed'
 		},
@@ -13,7 +13,7 @@ module.exports ={
 	dev: {
 		options: {
 			includePaths: [
-				'sass'
+				'sass/**/*'
 			],
 			sourceMap: true
 		},

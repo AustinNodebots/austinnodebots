@@ -13,7 +13,7 @@ module.exports = {
 			'src/**/*.js'
 		],
 		tasks: [
-			'newer:jshint'
+			'jshint'
 		],
 		options: {
 			livereload: true
@@ -24,11 +24,11 @@ module.exports = {
 			'src/sass/**/*.scss'
 		],
 		tasks: [
-			'newer:sass:dev'
+			'sass:dev'
 		],
 		options: {
 			livereload: true
- 		}
+		}
 	},
 	html: {
 		files: [
