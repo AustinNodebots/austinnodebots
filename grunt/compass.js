@@ -3,9 +3,10 @@ module.exports = {
 		options: {
 			sassDir: 'src/sass',
 			cssDir: 'dist/css',
-			httpPath: 'dist',
+			relativeAssets: true,
 			imagesDir: 'src/sprites',
 			generatedImagesDir: 'dist/img/sprites',
+			httpGeneratedImagesPath: 'img/sprites',
 			environment: 'production',
 			outputStyle: 'compressed'
 		}
@@ -14,9 +15,10 @@ module.exports = {
 		options: {
 			sassDir: 'src/sass',
 			cssDir: 'src/css',
-			httpPath: 'src',
+			relativeAssets: true,
 			imagesDir: 'src/sprites',
-			generatedImagesDir: 'src/img/sprites'
+			generatedImagesDir: 'src/img/sprites',
+			httpGeneratedImagesPath: 'img/sprites'
 		}
 	}
 };
