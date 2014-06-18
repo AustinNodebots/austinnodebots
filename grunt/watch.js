@@ -24,7 +24,7 @@ module.exports = {
 			'src/sass/**/*.scss'
 		],
 		tasks: [
-			'sass:dev'
+			'compass:dev'
 		],
 		options: {
 			livereload: true

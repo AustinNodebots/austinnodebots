@@ -7,7 +7,7 @@ test:
 build:
 - 'clean:dist'
 - 'jshint'
-- 'sass:dist'
+- 'compass:dist'
 - 'uglify'
 - 'copy'
 
@@ -16,7 +16,7 @@ deploy:
 - 'gh-pages'
 
 server:
-- 'sass:dev'
+- 'compass:dev'
 - 'connect:dev'
 - 'open:dev'
 - 'watch'
