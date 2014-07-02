@@ -7,16 +7,20 @@ test:
 build:
 - 'clean:dist'
 - 'jshint'
+- 'imagemin:static'
 - 'compass:dist'
 - 'uglify'
 - 'copy'
+- 'imagemin:distdynamic'
 
 deploy:
 - 'build'
 - 'gh-pages'
 
 server:
+- 'imagemin:static'
 - 'compass:dev'
+- 'imagemin:devdynamic'
 - 'connect:dev'
 - 'open:dev'
 - 'watch'
