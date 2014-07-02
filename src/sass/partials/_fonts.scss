@@ -1,0 +1,27 @@
+$text: "Palatino, Palatino Linotype, Georgia, Times, Times New Roman, serif";
+
+html {
+	font-size: 18px;
+}
+
+.h1, .h2, .h3 {
+	font-weight: 400;
+	font-color: $text-color;
+}
+
+.h1 {
+	font-size: 2em;
+}
+
+.h2 {
+	font-size: 1.5em;
+}
+
+.h3 {
+	font-size: 1.25em;
+}
+p,li {
+	font-color: $text-color;
+	font-family: $text;
+	font-weight: 100;
+}

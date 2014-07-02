@@ -1,0 +1,15 @@
+// Sprites for the page
+$view-sprite: sprite-map(
+	"home/*.png",
+	$home-spacing: 2px,
+	$home-fourkitchens-spacing: 5px
+);
+
+@import "partials/normalize";
+@import "partials/colors";
+@import "partials/utils";
+@import "partials/fonts";
+@import "partials/browsehappy";
+@import "partials/header";
+@import "partials/sponsors";
+@import "partials/sitenav";

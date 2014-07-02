@@ -1,0 +1,9 @@
+.browsehappy {
+	background-color: $lightgray;
+	border-bottom: 1px solid darken($lightgray, 20%);
+	margin: 0;
+	padding: 1em;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
