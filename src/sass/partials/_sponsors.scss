@@ -15,6 +15,15 @@
 	display: block;
 	text-indent: -9999px;
 }
+
+.txgov {
+	background: sprite($view-sprite, txgov);
+	height: image-height(sprite-file($view-sprite, txgov));
+	width: image-width(sprite-file($view-sprite, txgov));
+	display: block;
+	text-indent: -9999px;
+}
+
 .sponsors {
 	background-color: $lightgray;
 	border-bottom: 1px solid $gray;
