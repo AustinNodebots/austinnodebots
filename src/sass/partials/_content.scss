@@ -1,0 +1,17 @@
+a {
+	color: darken($text-color, 10%);
+	font-weight: bold;
+	text-decoration: none;
+
+	&:visited {
+		color: darken($text-color, 10%);
+	}
+
+	&:hover, &:active {
+		text-decoration: underline;
+	}
+}
+
+.goingson {
+	max-width: 80%;
+}

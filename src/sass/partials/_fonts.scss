@@ -6,7 +6,7 @@ html {
 
 .h1, .h2, .h3 {
 	font-weight: 400;
-	font-color: $text-color;
+	color: $text-color;
 }
 
 .h1 {
@@ -21,7 +21,7 @@ html {
 	font-size: 1.25em;
 }
 p,li {
-	font-color: $text-color;
+	color: $text-color;
 	font-family: $text;
 	font-weight: 100;
 }

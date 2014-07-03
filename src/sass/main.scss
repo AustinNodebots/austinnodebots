@@ -2,7 +2,7 @@
 $view-sprite: sprite-map(
 	"home/*.png",
 	$home-spacing: 2px,
-	$home-fourkitchens-spacing: 5px
+	$home-txgov-spacing: 5px
 );
 
 @import "partials/normalize";
@@ -11,5 +11,7 @@ $view-sprite: sprite-map(
 @import "partials/fonts";
 @import "partials/browsehappy";
 @import "partials/header";
-@import "partials/sponsors";
 @import "partials/sitenav";
+@import "partials/sponsors";
+@import "partials/content";
+@import "partials/footer";

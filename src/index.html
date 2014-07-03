@@ -28,10 +28,11 @@
 		<div class="content" role="main">
 			<section class="sponsors">
 				<div class="container">
-					<h1 class="h1">Austin NodeBots Day is being sponsored by:</h1>
+					<h1 class="sponsor-title">Austin NodeBots Day is being sponsored by:</h1>
 					<ul class="sponsorlist">
 						<li><a href="http://www.retailmenot.com" class="retailmenot">RetailMeNot</a></li>
 						<li><a href="http://fourkitchens.com/" class="fourkitchens">FourKitchens</a></li>
+						<li><span class="jstilwell">Jared Stilwell</span></li>
 						<li><a href="https://sub.watchmecode.net/austin-nodebots/" class="watchmecode">WatchMeCode</a></li>
 						<li><a href="http://www.texas.gov/" class="txgov">Texas.gov</a></li>
 					</ul>
@@ -54,11 +55,11 @@
 						<li>Attendee + Project Kit</li>
 					</ul>
 					<p><strong>Project Kits</strong> - the project is going to include wood cut frame for a SoccerBot (Sumobot with a mod to the front), 3d printed the front ball bearing holder, a couple of continuous servos, battery holder, batteries, and various supplies to connect it all.  The cool thing is that you get to the keep the project kit at the end of the day.  If you want to see an example take a look:</p>
-					<iframe src="//player.vimeo.com/video/96851105?portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/96851105?byline=0&amp;portrait=0" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 					<h2 class="h2">Location</h2>
 					<p><a href="http://www.retailmenot.com">RetailMeNot</a> will be hosting our event this year.</p>
-					<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zWY2KAWvDvuE.kJ5xC4GZMtrE" width="640" height="480"></iframe>
+					<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zWY2KAWvDvuE.kJ5xC4GZMtrE" width="320" height="320"></iframe>
 
 					<h2 class="h2">Speaker</h2>
 					<p>We have the privilege of having <a href="https://twitter.com/dtex">Donovan Buck</a> introduce you to <a href="http://nodebots.io/">NodeBots</a>, <a href="https://github.com/rwaldron/johnny-five/">Johnny-Five</a>, and a demo of what is possible.</p>
@@ -77,7 +78,7 @@
 
 					<h2 class="h2">Goings On</h2>
 					<p>We are working on a lot of things right now for the event:</p>
-					<ul>
+					<ul class="goingson">
 						<li><strong>Sponsorship</strong> - So you don't have to pay as much.  We've got some good leads for sponsors in the pipe, but we can always use more.</li>
 						<li><strong>Scheduling</strong> - just to sort of give some order to the day's events</li>
 						<li><strong>Device Starter Kits</strong> - Waiting to hear back from some sponsorship opportunities</li>
@@ -91,9 +92,15 @@
 					<header>
 						<h1 class="h1">Photos from Austin NodeBots Day 2013</h1>
 					</header>
-					<iframe src="https://www.flickr.com/photos/pierceray/9381909790/in/set-72157634817739973/player/" width="500" height="375" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					<iframe src="https://www.flickr.com/photos/pierceray/9381909790/player/" width="320" height="240" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</article>
+			</div>
 		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="hardwork">Austin Nodebots 2014 is made possible by the hard work of <a href="http://twitter.com/kassandra_perch" target="_blank">Kasandra Perch</a>, <a href="http://twitter.com/pierceray" target="_blank">Ray Pierce</a>, <a href="http://twitter.com/dylants" target="_blank">Dylan Smith</a> and the <a href="http://nodebots.io/" target="_blank">Nodebots</a> Community</div>
+			</div>
+		</footer>
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -101,6 +108,14 @@
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-51992411-1', 'austinnodebots.com');
 			ga('send', 'pageview');
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="/scripts/jquery.fitvids.js"></script>
+		<script>
+		  $(document).ready(function(){
+		    // Target your .container, .wrapper, .post, etc.
+		    $(".container").fitVids();
+		  });
 		</script>
 	</body>
 </html>

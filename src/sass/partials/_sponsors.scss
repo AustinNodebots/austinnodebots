@@ -1,63 +1,72 @@
 @import "compass";
 
-.fourkitchens {
-	background: sprite($view-sprite, fourkitchens);
-	height: image-height(sprite-file($view-sprite, fourkitchens));
-	width: image-width(sprite-file($view-sprite, fourkitchens));
-	display: block;
-	text-indent: -9999px;
-}
-
-.retailmenot {
-	background: sprite($view-sprite, retailmenotinc);
-	height: image-height(sprite-file($view-sprite, retailmenotinc));
-	width: image-width(sprite-file($view-sprite, retailmenotinc));
-	display: block;
-	text-indent: -9999px;
-}
-
-.watchmecode {
-	background: sprite($view-sprite, watchmecode);
-	height: image-height(sprite-file($view-sprite, watchmecode));
-	width: image-width(sprite-file($view-sprite, watchmecode));
-	display: block;
-	text-indent: -9999px;
-}
-
-.txgov {
-	background: sprite($view-sprite, txgov);
-	height: image-height(sprite-file($view-sprite, txgov));
-	width: image-width(sprite-file($view-sprite, txgov));
-	display: block;
-	text-indent: -9999px;
-}
-
 .sponsors {
 	background-color: $lightgray;
 	border-bottom: 1px solid $gray;
 	padding: 2em;
+}
 
-	h1 {
-		font-size: 1.5em;
-		line-height: 1.25em;
-		text-align: center;
-		margin: 0;
-	}
+.sponsor-title {
+	@extend .h1;
+	font-size: 1.5em;
+	line-height: 1.25em;
+	text-align: center;
+	margin: 0 0 1em;
 }
 
 .sponsorlist {
-	margin: 0;
-	padding: 2em 0 0;
-	list-style: none;
+	@extend %list-reset;
 	text-align: center;
-	@include pie-clearfix();
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 
 	li {
+		background: white;
+		border: 1px solid #e5e5e5;
+		border-radius: 3px;
 		display: inline-block;
-		margin-left: 2em;
-		margin-bottom: 1em;
-		&:first-child {
-			margin-left: 0;
-		}
+		margin: 0 .5em 1em;
+		overflow: hidden;
+		padding: 1em;
 	}
+}
+
+%sponsor-image {
+	display: block;
+	text-indent: -9999px;
+}
+
+.fourkitchens {
+	@extend %sponsor-image;
+	background: sprite($view-sprite, fourkitchens);
+	height: image-height(sprite-file($view-sprite, fourkitchens));
+	width: image-width(sprite-file($view-sprite, fourkitchens));
+}
+
+.retailmenot {
+	@extend %sponsor-image;
+	background: sprite($view-sprite, retailmenotinc);
+	height: image-height(sprite-file($view-sprite, retailmenotinc));
+	width: image-width(sprite-file($view-sprite, retailmenotinc));
+}
+
+.watchmecode {
+	@extend %sponsor-image;
+	background: sprite($view-sprite, watchmecode);
+	height: image-height(sprite-file($view-sprite, watchmecode));
+	width: image-width(sprite-file($view-sprite, watchmecode));
+}
+
+.txgov {
+	@extend %sponsor-image;
+	background: sprite($view-sprite, txgov);
+	height: image-height(sprite-file($view-sprite, txgov));
+	width: image-width(sprite-file($view-sprite, txgov));
+}
+
+.jstilwell {
+	text-align: bottom;
+	line-height: 62px;
+	font-size: 36px;
 }
