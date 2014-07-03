@@ -24,7 +24,8 @@ module.exports = {
 			'src/sass/**/*.scss'
 		],
 		tasks: [
-			'compass:dev'
+			'compass:dev',
+			'autoprefixer:dev'
 		],
 		options: {
 			livereload: true

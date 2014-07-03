@@ -4,7 +4,7 @@ module.exports = {
 			expand: true,
 			cwd: 'src',
 			src: [
-				'**/*.{html,png,jpg,gif}',
+				'**/*.{html,png,jpg,gif,js}',
 				'CNAME'
 			],
 			dest: 'dist'

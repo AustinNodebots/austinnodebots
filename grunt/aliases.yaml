@@ -9,6 +9,7 @@ build:
 - 'jshint'
 - 'imagemin:static'
 - 'compass:dist'
+- 'autoprefixer:dist'
 - 'uglify'
 - 'copy'
 - 'imagemin:distdynamic'
@@ -20,6 +21,7 @@ deploy:
 server:
 - 'imagemin:static'
 - 'compass:dev'
+- 'autoprefixer:dev'
 - 'imagemin:devdynamic'
 - 'connect:dev'
 - 'open:dev'
