@@ -1,10 +1,15 @@
+p, ul {
+	@extend %p;
+}
+
 a {
-	color: darken($text-color, 10%);
-	font-weight: bold;
+	@extend %p;
+	color: $dark-gray;
 	text-decoration: none;
+	font-weight: bold;
 
 	&:visited {
-		color: darken($text-color, 10%);
+		color: $dark-gray;
 	}
 
 	&:hover, &:active {
@@ -12,6 +17,4 @@ a {
 	}
 }
 
-.goingson {
-	max-width: 80%;
-}
+

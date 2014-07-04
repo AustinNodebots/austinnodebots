@@ -1,0 +1,36 @@
+.welcome {
+	background: $light-gray;
+}
+
+.welcome-title {
+	@extend %h2;
+	text-align: center;
+	text-transform: uppercase
+}
+.welcome-columns {
+	width: 100%;
+}
+
+.welcome-message {
+	@media screen and (min-width: 640px) {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 50%;
+		padding-right: .5em;
+		vertical-align: top;
+	}
+}
+
+.welcome-working {
+	@media screen and (min-width: 640px) {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 50%;
+		padding-left: .5em;
+		vertical-align: top;
+	}
+}
+
+.welcome-working-item {
+	margin-top: .5em;
+}

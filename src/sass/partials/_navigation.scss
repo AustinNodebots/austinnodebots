@@ -1,0 +1,51 @@
+.navigation {
+	border-bottom: 1px solid $light-gray;
+	@include pie-clearfix;
+	.container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.sitenav {
+	display: none;
+
+	@media screen and (min-width: 480px) {
+		display: block;
+		float: left;
+		left: 50%;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		text-align: center;
+	}
+}
+
+.sitenav-item {
+	float: left;
+	position:relative;
+	right: 50%;
+	border-right: 1px solid $light-gray;
+	&:first-child {
+		border-left: 1px solid $light-gray;
+	}
+}
+
+.sitenav-link {
+	color: $black;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 1em;
+	text-decoration: none;
+	width: auto;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.sitenav-tickets {
+	background: $yellow;
+}

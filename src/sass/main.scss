@@ -1,17 +1,24 @@
 // Sprites for the page
 $view-sprite: sprite-map(
-	"home/*.png",
+	'home/*.png',
 	$home-spacing: 2px,
-	$home-txgov-spacing: 5px
+	$home-txgov-spacing: 5px,
+	$home-donovan-spacing: 5px
 );
 
-@import "partials/normalize";
-@import "partials/colors";
-@import "partials/utils";
-@import "partials/fonts";
-@import "partials/browsehappy";
-@import "partials/header";
-@import "partials/sitenav";
-@import "partials/sponsors";
-@import "partials/content";
-@import "partials/footer";
+@import 'partials/fonts';
+@import 'partials/colors';
+@import 'partials/normalize';
+@import 'partials/utils';
+@import 'partials/browser-upgrade';
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/nbd-info';
+@import 'partials/follow';
+@import 'partials/welcome';
+@import 'partials/speaker';
+@import 'partials/location';
+@import 'partials/tickets';
+@import 'partials/sponsors';
+@import 'partials/content';
+@import 'partials/footer';

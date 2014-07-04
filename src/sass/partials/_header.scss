@@ -1,7 +1,5 @@
-.siteheader {
-	background-color: $energyyellow;
-}
+@import 'compass';
 
-.logo {
-	width: 100%;
+.header {
+	background: $white;
 }

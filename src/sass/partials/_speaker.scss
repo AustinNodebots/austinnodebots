@@ -1,0 +1,31 @@
+.speaker {
+	background: $dark-gray;
+	color: $white;
+
+	a {
+		color: #33f5f4;
+		text-decoration: none;
+
+		&:visited {
+			color: #33f5f4;
+		}
+
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
+}
+
+.donovan {
+	text-align: center;
+	position: relative;
+	margin-top: 2em;
+	&:before {
+		content: "";
+		display: block;
+		background: sprite($view-sprite, donovan);
+		height: image-height(sprite-file($view-sprite, donovan));
+		width: image-width(sprite-file($view-sprite, donovan));
+		margin: 0 auto;
+	}
+}
