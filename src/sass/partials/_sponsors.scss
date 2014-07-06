@@ -1,21 +1,18 @@
-@import "compass";
+@import 'compass';
 
 .sponsors {
-	background-color: $lightgray;
-	border-bottom: 1px solid $gray;
-	padding: 2em;
+	background: $white;
 }
 
 .sponsor-title {
-	@extend .h1;
-	font-size: 1.5em;
-	line-height: 1.25em;
 	text-align: center;
-	margin: 0 0 1em;
+	@extend %h2;
 }
 
 .sponsorlist {
-	@extend %list-reset;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	text-align: center;
 	display: flex;
 	flex-flow: row wrap;
@@ -23,8 +20,6 @@
 
 	li {
 		background: white;
-		border: 1px solid #e5e5e5;
-		border-radius: 3px;
 		display: inline-block;
 		margin: 0 .5em 1em;
 		overflow: hidden;

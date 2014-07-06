@@ -1,9 +1,14 @@
 .footer {
-	background-color: $energyyellow;
-	margin: 0;
-	padding: 1em 0;
-}
+	background: $dark-gray;
+	color: $light-gray;
+	text-align: center;
+	font-size: 14px;
+	a {
+		color: $white;
+		font-size: 14px;
 
-.hardwork {
-	font-size: .75em;
+		&:visited {
+			color: $white;
+		}
+	}
 }

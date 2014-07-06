@@ -1,0 +1,31 @@
+.tickets {
+	background: $yellow;
+	text-align: center;
+}
+
+.ticket-title {
+	@extend %h1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.ticket-link {
+	@extend %h2;
+	background: $black;
+	color: $white;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 4em;
+
+	&:visited {
+		color: $white;
+	}
+
+	&:active, &:hover {
+		text-decoration: underline;
+	}
+}
+
+.ticket-options {
+	text-align: left;
+}

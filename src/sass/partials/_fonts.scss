@@ -1,27 +1,5 @@
-$text: "Palatino, Palatino Linotype, Georgia, Times, Times New Roman, serif";
+$open-sans: 'Open Sans', sans-serif;
 
-html {
-	font-size: 18px;
-}
-
-.h1, .h2, .h3 {
-	font-weight: 400;
-	color: $text-color;
-}
-
-.h1 {
-	font-size: 2em;
-}
-
-.h2 {
-	font-size: 1.5em;
-}
-
-.h3 {
-	font-size: 1.25em;
-}
-p,li {
-	color: $text-color;
-	font-family: $text;
-	font-weight: 100;
-}
+%h1 { font-family: $open-sans; font-weight: 700; font-size: 48px; }
+%h2 { font-family: $open-sans; font-weight: 700; font-size: 28px; }
+%p { font-family: $open-sans; font-weight: 400; font-size: 24px; }
