@@ -65,3 +65,11 @@
 	line-height: 62px;
 	font-size: 36px;
 }
+
+.bazaarvoice {
+	@extend %sponsor-image;
+	background: sprite($view-sprite, bazaarvoice);
+	height: image-height(sprite-file($view-sprite, bazaarvoice));
+	width: image-width(sprite-file($view-sprite, bazaarvoice));
+
+}
