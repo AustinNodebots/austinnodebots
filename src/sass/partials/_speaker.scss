@@ -16,16 +16,6 @@
 	}
 }
 
-.donovan {
+.speaker-title {
 	text-align: center;
-	position: relative;
-	/*margin-top: 2em;*/
-	&:before {
-		content: "";
-		display: block;
-		/*background: sprite($view-sprite, donovan);*/
-		height: image-height(sprite-file($view-sprite, donovan));
-		width: image-width(sprite-file($view-sprite, donovan));
-		margin: 0 auto;
-	}
 }
